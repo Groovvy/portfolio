@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- TODO: 改成你的名字和介绍 -->
+  <title>Groovvy — Full-Stack Java Developer</title>
+  <meta name="description" content="Full-stack developer specializing in Java, Spring Boot, Vue and React. I build reliable web applications from database to deployment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">&lt;/&gt;</span> <span class="logo-name">Groovvy</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#stack">Tech Stack</a>
+        <a href="#work">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="badge-available"><span class="dot"></span> Available for new projects</p>
+          <h1>
+            Hi, I'm <span class="accent">Groovvy</span> —<br />
+            I build web apps that <span class="underline">just work</span>.
+          </h1>
+          <p class="hero-sub">
+            Full-stack developer with <strong>10 years</strong> of experience.
+            Java &amp; Spring Boot on the backend, Vue &amp; React on the frontend —
+            from database schema to deployment, one person, one contract.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+            <a href="#work" class="btn btn-ghost">See My Work →</a>
+          </div>
+          <ul class="hero-meta">
+            <li>☕ Java / Spring Boot</li>
+            <li>🖥️ Vue 3 &amp; React</li>
+            <li>🕐 UTC+8 · replies within hours</li>
+          </ul>
+        </div>
+
+        <div class="hero-code" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-titlebar">
+              <span class="tb red"></span><span class="tb yellow"></span><span class="tb green"></span>
+              <span class="code-filename">Developer.java</span>
+            </div>
+            <pre class="code-body"><code id="typedCode"></code><span class="caret"></span></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <p class="section-tag">Services</p>
+        <h2 class="section-title">What I can do for you</h2>
+        <div class="grid grid-3">
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7l-8-4-8 4 8 4 8-4z"/><path d="M4 12l8 4 8-4"/><path d="M4 17l8 4 8-4"/></svg>
+            </div>
+            <h3>Backend &amp; REST APIs</h3>
+            <p>Spring Boot services with clean REST APIs, JWT auth, MySQL/PostgreSQL design, Redis caching, Swagger docs.</p>
+            <ul class="card-list">
+              <li>API design &amp; development</li>
+              <li>Database schema &amp; migrations</li>
+              <li>Third-party integrations (Stripe, etc.)</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4M2 9h20"/></svg>
+            </div>
+            <h3>Full-Stack Web Apps</h3>
+            <p>Complete products from idea to launch: Spring Boot backend + Vue/React frontend, responsive UI and an admin panel to manage your data.</p>
+            <ul class="card-list">
+              <li>MVP for startups &amp; internal tools</li>
+              <li>Auth, roles &amp; admin dashboards</li>
+              <li>Docker deployment &amp; handover docs</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v3M16 2v3M7 11h2M11 11h2M15 11h2M7 15h2M11 15h2M15 15h2"/><rect x="4" y="4" width="16" height="18" rx="2"/><path d="M9 22v-4h6v4"/></svg>
+            </div>
+            <h3>Bug Fixes &amp; Rescue</h3>
+            <p>Build failing? NPE at 2am? I find root causes and fix them fast — most bugs solved within 24 hours, with a plain-language explanation.</p>
+            <ul class="card-list">
+              <li>Fast diagnosis &amp; hotfixes</li>
+              <li>Legacy code refactoring</li>
+              <li>Performance troubleshooting</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECH STACK ================= -->
+    <section class="section section-alt" id="stack">
+      <div class="container">
+        <p class="section-tag">Tech Stack</p>
+        <h2 class="section-title">Tools I work with daily</h2>
+        <div class="stack-groups">
+
+          <!-- TODO: 按你的真实技术增删 -->
+          <div class="stack-group reveal">
+            <h3>Backend</h3>
+            <div class="chips">
+              <span class="chip">Java 17 / 21</span>
+              <span class="chip">Spring Boot</span>
+              <span class="chip">Spring Security</span>
+              <span class="chip">MyBatis / Hibernate</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Redis</span>
+              <span class="chip">RabbitMQ</span>
+            </div>
+          </div>
+
+          <div class="stack-group reveal">
+            <h3>Frontend</h3>
+            <div class="chips">
+              <span class="chip">Vue 3</span>
+              <span class="chip">React</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Vite</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Element Plus / Ant Design</span>
+            </div>
+          </div>
+
+          <div class="stack-group reveal">
+            <h3>DevOps &amp; Tools</h3>
+            <div class="chips">
+              <span class="chip">Docker</span>
+              <span class="chip">Nginx</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Git / GitHub Actions</span>
+              <span class="chip">Maven / Gradle</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK / PROJECTS ================= -->
+    <section class="section" id="work">
+      <div class="container">
+        <p class="section-tag">Selected Work</p>
+        <h2 class="section-title">Recent projects</h2>
+
+        <!-- 项目卡片：细节按你的真实经历微调，确保视频沟通时聊得出来 -->
+        <div class="grid grid-3">
+
+          <article class="card card-project reveal">
+            <div class="project-thumb thumb-1">
+              <span class="project-emoji">🛒</span>
+            </div>
+            <div class="project-tags">
+              <span>Spring Boot</span><span>Vue 3</span><span>MySQL</span><span>Redis</span>
+            </div>
+            <h3>Omni-Channel E-Commerce Backend</h3>
+            <p>Order, inventory &amp; fulfillment system handling 300k+ orders/month across web, mobile and marketplace channels. Real-time stock sync cut overselling incidents by 90%.</p>
+            <!-- 有线上地址就解开这行: <a class="project-link" href="#" target="_blank">View project →</a> -->
+          </article>
+
+          <article class="card card-project reveal">
+            <div class="project-thumb thumb-2">
+              <span class="project-emoji">💳</span>
+            </div>
+            <div class="project-tags">
+              <span>Spring Cloud</span><span>RabbitMQ</span><span>PostgreSQL</span>
+            </div>
+            <h3>Payment Reconciliation Platform</h3>
+            <p>Auto-matches 500k+ daily transactions across 4 payment channels with 99.7% accuracy. Manual reconciliation dropped from 6 hours a day to 10 minutes.</p>
+          </article>
+
+          <article class="card card-project reveal">
+            <div class="project-thumb thumb-3">
+              <span class="project-emoji">🧩</span>
+            </div>
+            <div class="project-tags">
+              <span>Java</span><span>Docker</span><span>CI/CD</span>
+            </div>
+            <h3>Monolith-to-Microservices Migration</h3>
+            <p>Decomposed an 800k-line legacy monolith into 12 Spring services with automated pipelines. Releases went from weekly to daily; P99 API latency down 35%.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="section section-alt" id="process">
+      <div class="container">
+        <p class="section-tag">How I Work</p>
+        <h2 class="section-title">No surprises, just delivery</h2>
+        <div class="grid grid-4">
+
+          <div class="step reveal">
+            <span class="step-num">01</span>
+            <h3>Talk</h3>
+            <p>You tell me the problem. I ask questions, then give an honest estimate of time, cost and risks — free.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">02</span>
+            <h3>Scope</h3>
+            <p>We agree on a clear milestone plan with a fixed price. Nothing starts before you know exactly what you pay for.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">03</span>
+            <h3>Build</h3>
+            <p>I code and keep you updated with progress every day or two. You can watch the repo as it grows.</p>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">04</span>
+            <h3>Deliver</h3>
+            <p>Tested code, documentation, deployment help — and 14 days of free bug-fix support after handover.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="container contact-inner reveal">
+        <h2>Have an idea or a broken build?</h2>
+        <p>Tell me about it — I reply within a few hours (UTC+8).</p>
+
+        <!-- TODO: 改邮箱和链接 -->
+        <div class="contact-cta">
+          <a class="btn btn-primary btn-lg" href="mailto:groovvy@163.com">📧 groovvy@163.com</a>
+        </div>
+        <!-- 注册并完善 Fiverr/Upwork/GitHub 后把链接加回来:
+        <div class="contact-links">
+          <a href="https://github.com/Groovvy" target="_blank" rel="noopener">GitHub</a>
+          <span class="sep">·</span>
+          <a href="https://www.fiverr.com/你的用户名" target="_blank" rel="noopener">Fiverr</a>
+          <span class="sep">·</span>
+          <a href="https://www.upwork.com/freelancers/你的用户名" target="_blank" rel="noopener">Upwork</a>
+        </div>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> <span>Groovvy</span>. Built with plain HTML/CSS/JS — no framework needed.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
